@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="icon" href="./assets/favicon-16x16.png">
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho__imagem" src="./assets/pesquisando.jpg" alt="icone">
+        <h1 class="cabecalho__titulo">Decodificador</h1>
+    </header>
+        
+    <main class="apresentacao">
+        
+        <section class="apresentacao__input">
+            <div class="apresentacao__input__escreva">
+                <div class="input">
+                    <textarea id="apresentacao__input__texto" placeholder="Insira seu texto aqui"></textarea>
+                    <p class="apresentacao__input__paragrafo">Apenas letras minúsculas e sem acento.</p>
+            </div>     
+            
+            <div class="apresentacao__botoes">
+                <button onclick="criptografar()" class="botao__crip">criptografar</button>
+                <button onclick="descriptografar()" class="botao__decrip">descriptografar</button>
+            </div>
+        </section>
+
+        <div id="apresentacao__output">
+            <img class="apresentacao__imagem" src="./assets/pesquisando.jpg" alt="pesquisando_foto">
+            <h4 class="apresentacao__output__titulo">Nenhuma mensagem encontrada</h4>
+            <span class="apresentacao__output__texto">Digite o texto que você deseja criptografar ou descriptografar.</span>
+        </div>
+
+    </main>
+    <footer class="rodape">
+        <p class="rodape__autor">Desenvolvido por Gustavo Henrique.</p>
+        <div class="rodape__icones">
+            <a href="https://www.instagram.com/gustavohenrique3017/"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="https://github.com/Sig-afk"><ion-icon name="logo-github"></ion-icon></a>
+        </div>
+    </footer>
+    <script src="./script/script.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>
